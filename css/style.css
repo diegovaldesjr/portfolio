@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -28,6 +28,7 @@ header .logo {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.6s;
+  margin-top: -20px;
 }
 
 header .logo img {
@@ -94,7 +95,7 @@ header #toggle:after {
   right: -200px;
   width: 400px;
   height: 100vh;
-  background: #880e4f;
+  background: #f06292;
   z-index: 1;
   display: grid;
   place-items: center;
@@ -125,11 +126,10 @@ header #toggle:after {
 }
 
 .content {
-  /* max-width: 600px; */
-  
   width: 100%;
-  height: 65vh;
-  background: #880e4f;
+  height: 85vh;
+  margin-top: 115px;
+  background: #f06292;
 
   position: relative;
 }
@@ -141,22 +141,28 @@ header #toggle:after {
   right: 0;
   left: 0;
   bottom: 0;
-  background: url('../images/skate.jpg');
+  background: url('../images/Aesthetic-Pool.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-
 .content h2 {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 2.2em;
+  margin-bottom: 20px;
 }
 
 .content p {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #fff;
   font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.content h2 span {
+  color: #40c3ff;
+  font-size: 1.2em;
 }
 
 .content a {
@@ -167,8 +173,21 @@ header #toggle:after {
   color: #000;
   padding: 10px 30px;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 500;
+}
+
+.home-card {
+  position: absolute;
+  top: 26%;
+  left: 3%;
+  width: 50%;
+  background: #000;
+  padding: 50px 30px;
+}
+
+.home-card h2 {
+  text-transform: uppercase;
 }
 
 .sci {
@@ -208,9 +227,9 @@ header #toggle:after {
     padding: 20px 50px;
   }
 
-  /* .banner {
-    padding: 100px 50px 150px;
-  } */
+  header .logo {
+    margin-top: -10px;
+  }
 
   .banner h2 {
     font-size: 1.8em;
@@ -249,11 +268,11 @@ header #toggle:after {
 }
 
 .scanlines {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   z-index: 300;
   opacity: .6;
