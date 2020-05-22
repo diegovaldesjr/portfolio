@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Valdes - Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <section class="banner" id="sec">
+    <header>
+      <a href="#" class="logo"><img src="./images/Logo Diego.png" alt="Logo Diego Valdes DVA"></a>
+      <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="content">
+      <h2>Hello Word</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit esse saepe in nesciunt itaque. Eos, eum repellendus quos aspernatur nam consectetur quibusdam? Ipsam dolor repudiandae tenetur. Ratione quos odio suscipit?</p>
+      <a href="#">Conocer mas</a>
+    </div>
+    <ul class="sci">
+      <li><a href="#"><img src="#" alt="Github"></a></li>
+      <li><a href="#"><img src="#" alt="Linkedin"></a></li>
+      <li><a href="#"><img src="#" alt="Mail"></a></li>
+    </ul>
+  </section>
+
+  <div id="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Trabajos</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Twitch</a></li>
+    </ul>
+  </div>
+
+  <script type="text/javascript">
+    function toggle() {
+      var sec = document.getElementById('sec');
+      var nav = document.getElementById('navigation');
+      sec.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
