@@ -31,7 +31,8 @@ header .logo {
 }
 
 header .logo img {
-  max-width: 75px;
+  max-width: 90px;
+  mix-blend-mode: hard-light;
 }
 
 header #toggle {
@@ -93,7 +94,7 @@ header #toggle:after {
   right: -200px;
   width: 400px;
   height: 100vh;
-  background: #4a148c ;
+  background: #880e4f;
   z-index: 1;
   display: grid;
   place-items: center;
