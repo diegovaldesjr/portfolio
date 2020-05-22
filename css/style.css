@@ -177,8 +177,8 @@ header #toggle:after {
   background: #fff;
 }
 
-.sci li a img{
-  max-width: 20px;
+.sci li a img {
+  max-width: 38px;
   filter: invert(1);
   mix-blend-mode: difference;
 }
