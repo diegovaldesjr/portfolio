@@ -244,6 +244,12 @@ header #toggle:after {
     transform: translateX(-250px);
   }
 
+  .home-card {
+    top: 9%;
+    left: 5%;
+    width: 90%;
+  }
+
   #navigation {
     width: 250px;
   }
