@@ -7,6 +7,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html,body {
+  overflow: hidden;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -182,11 +186,6 @@ header #toggle:after {
 }
 
 .avatar {
-  /* position: absolute;
-  top: 0;
-  bottom: 0; */
-  /* right: 0; */
-  /* left: 0; */
   z-index: 1;
   height: 100%;
 }
@@ -198,20 +197,8 @@ header #toggle:after {
 }
 
 .home-card {
-  /* position: absolute;
-  top: 26%;
-  left: 3%;
-  width: 50%;
-  background: #0a0a0a;
-  padding: 50px 30px; */
-
-  /* position: absolute;
-  top: 52%;
-  left: 24%;
-  width: 45%; */
   background: #0a0a0a;
   padding: 50px 30px;
-  /* bottom: 0; */
   z-index: 1;
   flex-basis: 50%;
   margin-left: -70px;
@@ -284,10 +271,23 @@ header #toggle:after {
     transform: translateX(-250px);
   }
 
+  #home {
+    justify-content: center;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   .home-card {
-    top: 9%;
-    left: 5%;
-    width: 90%;
+    margin: 0;
+    flex-basis: 90%;
+    margin-bottom: 20px;
+    padding: 20px;
   }
 
   #navigation {
@@ -305,6 +305,7 @@ header #toggle:after {
     right: initial;
     flex-direction: row;
     margin-left: 50px;
+    top: auto;
   }
 
   .sci li a {
