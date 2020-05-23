@@ -13,14 +13,25 @@
       <a href="/" class="logo"><img src="./images/logo.gif" alt="Logo Diego Valdes DVA"></a>
       <div id="toggle" onclick="toggle()"></div>
     </header>
+
     <div id="home" class="content">
       <div class="scanlines"></div>
+      <div class="avatar">
+        <img src="./images/Avatar.png" alt="Avatar Diego Valdes DVA">
+      </div>
       <div class="home-card">
-        <h2>Hey! <br>Soy <span>Diego Valdés</span></h2>
+        <h2>¡Hey! <br>Soy <span>Diego Valdés</span></h2>
         <p>Ingeniero de software, apasionado por la creación de soluciones de calidad. Con experiencia en diseño de arquitecturas en la nube, software en gestión de proyectos, mesas de ayuda, desarrollo web y desarrollo de software.</p>
-        <a href="#">CONOCER MAS</a>
+        <!-- <a href="#">CONOCER MAS</a> -->
       </div>
     </div>
+
+    <div id="work">
+      <div>
+        <h2>Trabajos</h2>
+      </div>
+    </div>
+    
     <ul class="sci">
       <li><a href="https://github.com/diegovaldesjr"><img src="./images/icons8-github-50.png" alt="Github"></a></li>
       <li><a href="https://www.linkedin.com/in/diegovaldesjr"><img src="./images/icons8-ios-50.png" alt="Linkedin"></a></li>
@@ -45,6 +56,12 @@
       sec.classList.toggle('active');
       nav.classList.toggle('active');
     }
+
+    var home = document.getElementById('home');
+    window.addEventListener('scroll', function() {
+      var value = 1 + window.scrollY/-600;
+      home.style.opacity = value;
+    });
   </script>
 </body>
 </html>

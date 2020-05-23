@@ -65,10 +65,10 @@ header #toggle:after {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  /* padding: 100px; */
   background-color: rgb(17, 17, 17);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   transition: 0.5s;
   z-index: 2;
 }
@@ -125,47 +125,37 @@ header #toggle:after {
   text-transform: uppercase;
 }
 
-.content {
+#home {
   width: 100%;
   height: 85vh;
   margin-top: 115px;
   background: #f06292;
 
   position: relative;
+
+  display: flex;
+  align-items: flex-end;
 }
 
-.content:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: url('../images/Aesthetic-Pool.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.content h2 {
+#home h2 {
   color: #fff;
-  font-size: 2.2em;
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
-.content p {
+#home p {
   font-size: 1em;
   color: #fff;
   font-weight: 300;
   margin-bottom: 20px;
 }
 
-.content h2 span {
+#home h2 span {
   color: #40c3ff;
   font-size: 1.2em;
 }
 
-.content a {
+#home a {
   position: relative;
   display: inline-block;
   margin-top: 20px;
@@ -177,17 +167,63 @@ header #toggle:after {
   font-weight: 500;
 }
 
-.home-card {
+#home:before {
+  content: '';
   position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url('../images/Aesthetic-Pool.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.avatar {
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  /* right: 0; */
+  /* left: 0; */
+  z-index: 1;
+  height: 100%;
+}
+
+.avatar img {
+  display: block;
+  max-height: 100%;
+  width: auto;
+}
+
+.home-card {
+  /* position: absolute;
   top: 26%;
   left: 3%;
   width: 50%;
-  background: #000;
+  background: #0a0a0a;
+  padding: 50px 30px; */
+
+  /* position: absolute;
+  top: 52%;
+  left: 24%;
+  width: 45%; */
+  background: #0a0a0a;
   padding: 50px 30px;
+  /* bottom: 0; */
+  z-index: 1;
+  flex-basis: 50%;
+  margin-left: -70px;
 }
 
 .home-card h2 {
   text-transform: uppercase;
+}
+
+#work {
+  height: 100vh;
+  display: none;
 }
 
 .sci {
@@ -195,6 +231,7 @@ header #toggle:after {
   display: flex;
   flex-direction: column;
   right: 100px;
+  top: 50%;
 }
 
 .sci li {
@@ -216,10 +253,13 @@ header #toggle:after {
   background: #fff;
 }
 
+.sci li a img:hover {
+  filter: invert(0);
+}
+
 .sci li a img {
   max-width: 38px;
   filter: invert(1);
-  mix-blend-mode: difference;
 }
 
 @media (max-width: 767px) {
@@ -235,8 +275,8 @@ header #toggle:after {
     font-size: 1.6em;
   }
 
-  .banner .content p,
-  .banner .content a {
+  .banner #home p,
+  .banner #home a {
     font-size: 1em;
   }
 
@@ -281,7 +321,7 @@ header #toggle:after {
   height: 100%;
   pointer-events: none;
   z-index: 300;
-  opacity: .6;
+  opacity: .3;
   will-change: opacity;
   animation: opacity 3s linear infinite;
 }
