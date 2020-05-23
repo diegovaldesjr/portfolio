@@ -301,14 +301,15 @@ header #toggle:after {
 
   .sci {
     position: absolute;
+    flex-direction: row;
     top: 20%;
-    right: 20px;
+    right: 10px;
     z-index: 1;
   }
 
   .sci li a {
     margin: initial;
-    margin-bottom: 10px;
+    margin-right: 10px;
   }
 }
 
